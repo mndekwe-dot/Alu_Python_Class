@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f5f7;
+  color: #2b2b2b;
+}
+
+header {
+  background-color: #e3350d;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.back-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+main {
+  padding: 1.5rem 2rem;
+}
+
+#status {
+  text-align: center;
+  font-style: italic;
+}
+
+/* CSS grid for the Pokémon cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.card button {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b6ce3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.card button:hover {
+  background-color: #2a52b8;
+}
+
+/* Details page */
+.details-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.details-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.details-card h2 {
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+}
+
+.details-card .types span {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 0.2rem;
+  border-radius: 999px;
+  background-color: #3b6ce3;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+}
+
+.details-card table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.details-card table td {
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.details-card table td:first-child {
+  font-weight: bold;
+  width: 40%;
+}
